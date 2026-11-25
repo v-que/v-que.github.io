@@ -57,14 +57,8 @@ document.querySelectorAll("[data-email-scramble]").forEach((container) => {
       scrambledText.textContent = characters.join("");
 
       if (completed) {
-        const address = characters.join("");
-        const emailLink = document.createElement("a");
-        emailLink.href = `mailto:${address}`;
-        emailLink.textContent = address.replace("@", " [at] ");
-        emailLink.setAttribute("aria-label", `Email ${address}`);
-        container.replaceChildren(emailLink);
+        container.textContent = characters.join("");
         container.removeAttribute("aria-busy");
-        emailLink.focus({ preventScroll: true });
         return;
       }
 
