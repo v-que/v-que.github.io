@@ -196,6 +196,27 @@ ol {
   white-space: nowrap;
 }
 
+.email-unscramble {
+  appearance: none;
+  display: block;
+  margin: 6px 0 0;
+  padding: 2px 7px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background: transparent;
+  color: #777;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: inherit;
+}
+
+.email-unscramble:hover {
+  border-color: #999;
+  color: #666;
+}
+
 .home-intro {
   max-width: 620px;
   padding-top: 2px;
